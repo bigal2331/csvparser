@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 1200px;
+  max-width: 100vw;
+  margin: auto;
+}
+.container {
+  text-align: center;
+  margin: auto;
+  color: #5f5173;
+}
+.logo {
+  background-color: #5f5173;
+  padding: 2rem;
+  color: #aaa9b6;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+table {
+  margin: auto;
+}
+table td,
+table th {
+  border: 0.02rem solid gray;
+  text-align: center;
+}
+
+table th:hover {
+  cursor: pointer;
+}
+.file-container {
+  margin: 2rem 0;
+}
+
+.file-input {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.file-input + label,
+button {
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  /* font-size: 1.15rem; */
+  color: #fff;
+  background: #9188a9;
+  cursor: pointer;
+  border: none;
+}
+
+.file-input:focus + label,
+.file-input + label:hover {
+  background-color: #abdae6;
+}
+
+.filter-container {
+  margin: 2rem 0;
+}
