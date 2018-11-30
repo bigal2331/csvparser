@@ -17,6 +17,7 @@ body {
   width: 100%;
   color: #1c3a239f;
 }
+
 .logo-container {
   width: 100%;
   clip-path: polygon(0 0, 100% 0%, 100% 45%, 0% 100%);

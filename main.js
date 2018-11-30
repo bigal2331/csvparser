@@ -105,7 +105,6 @@ applyFilterBtn.addEventListener("click", applyFilter);
 clearFilterBtn.addEventListener("click", () => {
   let filterOptionList = document.querySelector(".filter-list__items");
   let filterSearchBar = document.querySelector(".search-bar");
-  console.log(filterOptionList[0]);
 
   filterOptionList.selectedIndex = 0;
   filterSearchBar.value = "";
