@@ -95,7 +95,10 @@ let applyFilter = () => {
   }
 
   filteredData = filteredData.filter(record => {
-    return record[selectedOption] === filterSearchBar.value;
+    return (
+      record[selectedOption].toLowerCase() ===
+      filterSearchBar.value.toLowerCase()
+    );
   });
   notify(`${selectedOption} = ${filterSearchBar.value}`, "text");
   createParsedDataTable(filteredData);
