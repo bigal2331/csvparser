@@ -12,23 +12,28 @@
   <body>
     <div class="main">
       <div class="container">
-        <header><div class="logo">CSV-Parser</div></header>
+        <header>
+          <div class="logo-container">
+            <div class="logo"><span class="logo-text">CSV-Parser</span></div>
+          </div>
+        </header>
         <div class="file-container">
           <input type="file" name="file" id="file" class="file-input" />
           <label for="file">Choose a file</label>
         </div>
-        <div class="table-container">
-          <div class="filter-container">
-            <div class="filter-notifications"></div>
-            <select class="filter-list__items">
-              <option value="none selected">none selected</option>
-            </select>
-            <span>=</span>
-            <input class="search-bar" type="text" placeholder="filter..." />
 
-            <button class="filter-button__apply">Filter</button>
-            <button class="filter-button__clear">Clear Filter</button>
-          </div>
+        <div class="filter-container">
+          <div class="filter-notifications"></div>
+          <select class="filter-list__items">
+            <option value="none selected">none selected</option>
+          </select>
+          <span>=</span>
+          <input class="search-bar" type="text" placeholder="filter..." />
+
+          <button class="filter-button__apply">Apply Filter</button>
+          <button class="filter-button__clear">Clear Filter</button>
+        </div>
+        <div class="table-container">
           <table>
             <thead>
               <tr></tr>

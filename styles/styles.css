@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+
 * {
   box-sizing: border-box;
 }
@@ -8,38 +10,66 @@ body {
   padding: 0;
 }
 .main {
-  width: 1200px;
-  max-width: 100vw;
-  margin: auto;
+  width: 100vw;
 }
 .container {
   text-align: center;
-  margin: auto;
-  color: #5f5173;
+  width: 100%;
+  color: #1c3a239f;
+}
+.logo-container {
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 45%, 0% 100%);
+  background-color: #7cd38c99;
+  padding: 4.5rem;
 }
 .logo {
-  background-color: #5f5173;
-  padding: 2rem;
-  color: #aaa9b6;
-  font-weight: 600;
+  width: 100%;
+  padding: 5rem;
+  background-color: #ffffff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.logo-text {
+  font-weight: 200;
+  padding: 1rem auto;
+  color: #3c69459f;
   text-transform: uppercase;
 }
-table {
-  margin: auto;
-}
-table td,
-table th {
-  border: 0.02rem solid gray;
-  text-align: center;
+@media (min-width: 40rem) {
+  .main {
+    width: 1200px;
+    max-width: 100vw;
+    margin: auto;
+  }
+  .logo-text {
+    font-size: 2.5rem;
+  }
 }
 
+.filter-container > span {
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.table-container {
+  overflow: auto;
+}
+table,
+td,
+th {
+  border: 0.02rem solid #3c69459f;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  border-bottom-right-radius: 10px;
+}
 table th:hover {
   cursor: pointer;
 }
 .file-container {
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
-
 .file-input {
   opacity: 0;
   overflow: hidden;
@@ -50,18 +80,59 @@ table th:hover {
 button {
   padding: 0.35rem;
   border-radius: 0.5rem;
-  /* font-size: 1.15rem; */
-  color: #fff;
-  background: #9188a9;
+  font-weight: 600;
+  background: #fff;
+  color: #1c3a239f;
+  border: 1px solid #64ad719f;
   cursor: pointer;
-  border: none;
 }
-
+button {
+  margin: 2rem 1rem;
+}
 .file-input:focus + label,
-.file-input + label:hover {
-  background-color: #abdae6;
+.file-input + label:hover,
+button:hover {
+  background-color: #64ad719f;
+  color: #fff;
+}
+.filter-container {
+  margin: 2rem auto;
 }
 
-.filter-container {
-  margin: 2rem 0;
+.filter-list__items,
+.filter-list__items option,
+.search-bar {
+  width: 10rem;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #64ad719f;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-bar::placeholder {
+  color: #1c3a239f;
+}
+
+.filter-error {
+  display: inline-block;
+  padding: 0.35rem;
+  margin: 0.8rem;
+  background-color: #d84d499f;
+  color: #fff;
+  border: 1px solid #e07c4d9f;
+  border-radius: 0.5rem;
+}
+
+.filter-text {
+  display: inline-block;
+  padding: 0.35rem;
+  margin: 0.8rem;
+  background-color: #7cd38c99;
+  color: #fff;
+  border: 1px solid #7cd38c99;
+  border-radius: 0.5rem;
 }
